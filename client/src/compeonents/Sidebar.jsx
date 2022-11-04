@@ -36,7 +36,7 @@ const Sidebar = () => {
         <div
           className={`${toggle ? "flex flex-col" : "hidden"} sm:flex flex-col`}
         >
-          <div className="p-3 mt-3 h-[46px] flex items-center px-4 hover:bg-back2  hover:border-primary border-l-[9px] cursor-pointer">
+          <div className={`p-3 mt-3 h-[46px] flex items-center px-4 hover:bg-back2  hover:border-primary border-l-[9px] cursor-pointer`}>
             <button
               onClick={() => setSelected("create")}
               className=" ml-4 font-roboto font-[700] text-[17px] text-primary"
