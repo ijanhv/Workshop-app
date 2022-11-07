@@ -28,12 +28,11 @@ const deleteWorkshop = async (req, res, next) => {
     }
 }
 
-const getWorkshop = async (req, res, next) => {
-    try {
-        const Workshop = await Workshop.findById(req.params.id);
-        res.status(200).json(Workshop)
-        console.log('Got Rm')
-    } catch (err) {
+ const getWorkshop = async (req, res, next) => {
+    try{
+        const workshop = await Workshop.findById(req.params.id);
+        res.status(200).json(workshop)
+    } catch(err) {
         next(err);
     }
 }
